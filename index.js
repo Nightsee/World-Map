@@ -29,7 +29,6 @@ async function mouseEntered(e){
       tooltip.style.transform = `translate(${e.offsetX + 200}px, ${e.offsetY - 30}px)`;
       tooltip.style.display="block"
       let country = await find_country(details.title.value)
-      console.log(country)
       tooltip.innerHTML = `
         <p>official name: ${country.name.official}</p>
         <p>common name: ${country.name.common}</p>
